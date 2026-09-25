@@ -1,0 +1,3 @@
+[submodule "external/parcae"]
+	path = external/parcae
+	url = https://github.com/sandyresearch/parcae.git

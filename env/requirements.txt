@@ -1,0 +1,21 @@
+# --- Core modeling stack (directly imported by src/ and experiments/) ---
+transformers>=4.57
+accelerate>=1.13
+datasets>=4.8
+huggingface_hub>=0.36
+tokenizers>=0.22
+safetensors>=0.7
+sentencepiece>=0.2        # tokenizer backend for some HF models (Ouro etc.)
+tiktoken>=0.7             # tokenizer backend for GPT/Qwen-style HF models
+einops>=0.8               # used by the recursive-model implementations
+
+# --- Numerics / plotting ---
+numpy>=1.26               # broad floor: avoids deps that still cap numpy<2
+matplotlib>=3.10          # experiments/exp1_acceptance/plot.py
+
+# --- Build / tooling ---
+ninja>=1.11               # general build tool (FA4/CuTeDSL JIT-compiles at runtime — no nvcc source build)
+
+# --- Optional: experiment logging (only the version banner in verify_env.py
+#     imports it today; keep loose, drop if you never log to W&B) ---
+wandb>=0.27

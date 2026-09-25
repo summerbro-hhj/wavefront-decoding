@@ -1,0 +1,66 @@
+# Python bytecode / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Conventional virtualenv folder names.
+# NOTE: our project keeps env specs in `env/` (requirements.txt + environment.yml + verify_env.py),
+# so do NOT add `env/` here — only ignore the standard venv folder names.
+.venv/
+venv/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Testing / type checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-local artifacts that should not live in git history
+*.log
+*.out
+*.tmp
+nohup.out
+wandb/
+
+# Large or sensitive paths that occasionally show up
+.env
+.env.local
+
+# Machine-local Claude Code settings (permissions etc.) — keep plans/ tracked.
+.claude/settings.local.json
+
+# Re-downloadable external datasets (e.g. SpecBench question.jsonl).
+/data/
+
+# Stray editor/extension package downloads.
+Microsoft.VisualStudio.Services.VSIXPackage
+
+# test results
+*.json
+*.pdf
+*.png
+.claude/

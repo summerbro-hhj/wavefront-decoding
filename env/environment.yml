@@ -1,0 +1,11 @@
+
+
+name: ssd
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Install torch separately first (see header), THEN this file:
+      - --requirement requirements.txt
