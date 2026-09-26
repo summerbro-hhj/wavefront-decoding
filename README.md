@@ -3,6 +3,9 @@
 We introduce Wavefront Decoding (WFD), a training-free,
 lossless self-speculative decoding framework native to looped language models.
 
+**Paper**:
+[![arXiv](https://img.shields.io/badge/arXiv-2609.23033-b31b1b.svg)](https://arxiv.org/abs/2609.23033)
+
 ## Environment Setup
 
 Make sure you pulled submodules
